@@ -12,17 +12,17 @@ using namespace ICA3;
 //driver program to test all exception cases
 int main() {
     cout << "Testing int data type\n";
-    Square<int> One(0);
-    Square<int> Two(-1);
-    Square<int> Three(10);
+    Square<int> S1(0);
+    Square<int> S2(-1);
+    Square<int> S3(10);
     
     cout << "\nTesting float data type\n";
-    Square<float> Four(0);
-    Square<float> Five(-1.1);
-    Square<float> Six(10.10);
+    Square<float> S4(0);
+    Square<float> S5(-1.1);
+    Square<float> S6(10.10);
     
     cout << "\nTesting char data type\n";
-    Square<char> Seven('a');
+    Square<char> S7('a');
     
     return 0;
 }

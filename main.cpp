@@ -3,24 +3,27 @@
 //Name: Duy Ta                  contribute:33%               duy.ta1895@gmail.com
 
 #include <iostream>
-#include "ClearanceSale.h"
+#include "Square.h"
+#include "Square.cpp"
 
 using namespace std;
-using namespace SavitchSale;
+using namespace ICA3;
 
+//driver program to test all exception cases
 int main() {
-    //creating an array of Sale with size of 3
-    Sale *s[3];
+    cout << "Testing int data type\n";
+    Square<int> One(0);
+    Square<int> Two(-1);
+    Square<int> Three(10);
     
-    //defining the Sale array
-    s[0] = new Sale(10);                    //price = $10
-    s[1] = new DiscountSale(10,10);         //price = $10, discount = 10%
-    s[2] = new ClearanceSale(10,10,10);     //price = $10, discount = 10%, clearance discount = 10%
+    cout << "\nTesting float data type\n";
+    Square<float> Four(0);
+    Square<float> Five(-1.1);
+    Square<float> Six(10.10);
     
-    //printing the Sale array
-    for(int i = 0; i < 3; i++) {
-        s[i]->print();
-    }
+    cout << "\nTesting char data type\n";
+    Square<char> Seven('a');
     
     return 0;
 }
+
